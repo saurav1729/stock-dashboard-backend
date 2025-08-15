@@ -1,0 +1,8 @@
+Flask
+TA-Lib
+numpy
+pandas
+requests
+yfinance
+sqlalchemy
+flask_cors
