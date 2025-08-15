@@ -70,7 +70,7 @@ from flask_cors import CORS
 from concurrent.futures import ThreadPoolExecutor
 
 app = Flask(__name__)
-CORS(app, origins="http://localhost:3000")  # Allow requests from localhost:3000
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Define a list of 10 Indian companies (tickers)
 COMPANIES = ["RELIANCE.NS", "TCS.NS", "HDFCBANK.NS", "INFY.NS", "HINDUNILVR.NS", "ICICIBANK.NS", "KOTAKBANK.NS", "SBIN.NS", "BAJFINANCE.NS", "BHARTIARTL.NS"]
